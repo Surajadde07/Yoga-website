@@ -1,0 +1,201 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500&family=Poppins:wght@400;500&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    * {
+        @apply box-border p-0 m-0;
+    }
+
+    html {
+        @apply scroll-smooth;
+    }
+
+    body,
+    input,
+    button {
+        @apply font-body_font text-normal_font_size;
+    }
+
+    body {
+        @apply bg-body_color text-text_color dark:bg-dark_body_color;
+        @apply transition-[background] duration-[.4s];
+    }
+
+    header{
+        @apply transition-[background] duration-[.4s];
+    }
+    h1,
+    h2,
+    h3,
+    h4 {
+        @apply text-title_color font-font_regular;
+    }
+
+    ul {
+        @apply list-none;
+    }
+
+    a {
+        @apply no-underline;
+    }
+
+    img {
+        @apply max-w-full h-auto;
+    }
+
+    /* section { */
+        /* @apply pt-20 pb-4; */
+    /* } */
+
+    main {
+        @apply overflow-hidden;
+        /* For animation ScrollReveal */
+    }
+    /* nav{ */
+        /* @apply mn:gap-x-[4.5rem]; */
+    /* } */
+}
+
+
+@layer components {
+    .button {
+        @apply inline-flex items-center gap-x-1 bg-gradient_color py-4 px-[1.8rem] rounded-[4rem] text-white_color font-font_medium;
+    }
+
+    .button i {
+        @apply text-[1.5rem] transition-transform duration-[0.3s];
+    }
+
+    .button:hover i {
+        @apply translate-x-1;
+    }
+
+    /* ::-webkit-scrollbar{ */
+    /* @apply w-[.6rem] rounded-[.5rem] bg-gradient_color text-red-600; */
+    /* } */
+    .join__input::placeholder {
+        @apply text-text_color_light;
+    }
+
+    .nav{
+        @apply mn:gap-x-[4.5rem];
+        /* @apply ln:h-header-height; */
+    }
+}
+.nav__link:hover{
+    @apply bg-gradient_color bg-clip-text text-transparent;
+}
+
+@layer utilities {
+
+    /*=============== REUSABLE CSS CLASSES ===============*/
+    /*? 1rem - 16px 1-4px */
+
+    .container_1 {
+        @apply max-w-[1120px] mx-6 my-3;
+        @apply sm:ms-[1rem] sm:me-[1rem];
+        @apply ln:mx-auto;
+        @apply 2xl:max-w-[1250px];
+    }
+
+    /* .grid { */
+    /* @apply grid gap-6; */
+    /* } */
+
+    .section__title {
+        @apply text-center text-biggest_font_size font-second_font mb-6;
+        @apply ln:mb-[2.5rem];
+    }
+
+    .section {
+        @apply pt-20 pb-4;
+        @apply ln:pt-[7rem] ln:pb-[1.5rem];
+    }
+    /* .blur-header::after { */
+        /* /~ Dark mode-specific styles here ~/ */
+        /* background-color: hsla(0, 0%, 10%, .3); */
+    /* } */
+    .header-height {
+        height: calc(var(--header_height) + 1.5rem);
+    }
+}
+
+/* .custom-scrollbar::-webkit-scrollbar { */
+/* width: 0.6rem; */
+/* border-radius: 0.5rem; */
+/* background-color: hs1(260, 16%, 75%); */
+/* color: red; */
+/* } */
+
+.show-menu {
+    right: 0 !important;
+}
+
+.blur-header {
+    background-color: transparent;
+}
+
+.text_initial{
+    text-align: initial;
+}
+.blur-header::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: hsla(0, 0%, 100%, .3);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/* .dark-theme .blur-header::after { */
+    /* /~ Dark mode-specific styles here ~/ */
+    /* background-color: hsla(0, 0%, 10%, .3); */
+/* } */
+
+/* @media (prefers-color-scheme: dark) { */
+    /* .dark\:blur-header::after { */
+        /* background-color: #1a1a1a4d; /~ Adjust the values accordingly for dark mode ~/ */
+    /* } */
+/* } */
+.grid_1 {
+    /* @apply grid gap-6; */
+    display: grid;
+    gap: 1.5rem;
+}
+
+.home__container {
+    row-gap: 2rem;
+    padding-top: 1rem;
+}
+
+.show-scroll {
+    bottom: 3rem;
+}
+
+.active-link {
+    @apply bg-gradient_color bg-clip-text text-transparent;
+    /* @apply dark: bg-gradient_color bg-clip-text text-transparent; */
+}
+
+/* body .dark-theme { */
+/* --title_color: #d1c0f1; */
+/* --text_color: #a094b8; */
+/* --body_color: #14092a; */
+/* --container_color: #372a51; */
+/* } */
+
+/* .web { */
+/* -webkit-background-clip: text; */
+/* } */
+
+/* .p-block-1-25 { */
+/* padding-block: 1.25rem; */
+/* } */

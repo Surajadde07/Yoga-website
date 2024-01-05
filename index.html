@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="/src/img/favicon.png" type="image/x-icon">
+
+    <!--=============== REMIXICONS ===============-->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet"> -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <!--=============== CSS ===============-->
+    <!-- <link rel="stylesheet" href="assets/css/styles.css"> -->
+    <link href="/dist/output.css" rel="stylesheet">
+
+    <title>Responsive yoga website - Bedimcode</title>
+</head>
+
+<body>
+    <!--!==================== HEADER ====================-->
+    <header class="header fixed w-full bg-body_color dark:bg-[#14092a]  top-0 left-0 z-z_fixed " id="header">
+        <nav class=" nav container_1  flex justify-between items-center ln:h-[4rem]">
+            <!--! changed the nav container to nav__container -->
+            <a href="#"
+                class="nav__logo text-h2_font_size font-second_font font-font_medium bg-gradient_color bg-clip-text text-transparent ln:text-h1_font_size">Yoga</a>
+
+            <div class="nav__menu md:fixed md:top-0 md:right-[-100%] md:bg-[#ffffff4d] md:w-9/12 md:h-full md:pt-[4.5rem] md:pr-0 md:pb-0 md:pl-[3rem] md:backdrop-blur-xl md:transition-right md:transition-[.4s] mn:ml-auto mn:dark:bg-transparent"
+                id="nav-menu">
+                <ul class="nav__list flex flex-col gap-y-12 mn:flex-row mn:gap-x-[4.5rem]">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link text-title_color   font-font_medium active-link dark:text-dark_title_color">Home</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#health" class="nav__link text-title_color   font-font_medium dark:text-dark_title_color">Health</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#routine" class="nav__link text-title_color   font-font_medium dark:text-dark_title_color">Routine</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#follow" class="nav__link text-title_color   font-font_medium dark:text-dark_title_color">Follow</a>
+                    </li>
+                </ul>
+
+                <!--? Close button -->
+                <div class="nav__close flex text-[1.5rem] text-title_color dark:text-dark_title_color  cursor-pointer absolute top-[1rem] right-[1.5rem] mn:hidden"
+                    id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+
+            <div class="nav__buttons flex items-center gap-x-[1.25rem]">
+                <!--? Theme change button  -->
+                <i class="ri-moon-line change-theme text-[1.5rem] text-title_color dark:text-dark_title_color  cursor-pointer" id="theme-button"></i>
+
+                <!--? Toggle button -->
+                <div class="nav__toggle flex-col text-[1.5rem] text-title_color dark:text-dark_title_color  cursor-pointer mn:hidden" id="nav-toggle">
+                    <i class="ri-apps-2-line"></i>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+
+    <!--!==================== MAIN ====================-->
+    <main class="main">
+        <!--?==================== HOME ====================-->
+        <section class="home section" id="home">
+            <div class="home__container container_1 grid_1 me:grid-cols-[350px] me:justify-center lg:grid-cols-2-400px lg:items-center ln:grid-cols-2-500px ln:items-center xl:grid-cols-500px-600px xl:grid xl:justify-start xl:mt-[-40px] 2xl:justify-between">
+                <div class="home__data text-center lg:text-left lg:mb-[8.5rem] xl:mb-[-3.5rem]">
+                    <h1
+                        class="home__title text-biggest_font_size font-second_font font-font_medium leading-[135%] relative w-max mt-0 mx-auto mb-[1.25rem] dark:text-dark_title_color sm:text-[2rem] lg:mx-0 lg:mt-0 lg:mb-[1.25rem] ln:mb-[1.5rem] ln:text-[4.5rem]">
+                        Choose Your
+                        <div class="home__title-box flex justify-center gap-x-3 lg:justify-start ln:gap-x-[1.5rem] ln:justify-start">
+                            Best <div class="bg-gradient_color py-1 px-3 rounded-lg text-white_color rotate-[10deg] ln:rounded-[1rem]">
+                                Yoga</div>
+                        </div>
+                        Teacher
+
+                        <img src="img/star-img.svg" alt="home image"
+                            class="absolute w-[50px] left-[-1rem] bottom-[1rem] lg:left-[initial] lg:right-[-1rem] ln:w-[95px] ln:top-[8rem] ln:right-[-3.5rem]">
+                    </h1>
+
+                    <p class="home__description relative mb-6 dark:text-dark_text_color ln:mb-[2rem] ln:pr-[5rem] ">
+                        Calm your mind and body with the best
+                        yoga teachers available, relax your day
+                        and stay positive.
+
+                        <img src="img/circle-img.svg" alt="home image" class="absolute w-4 right-16 bottom-[-1rem] ln:w-[24px] ln:top-[-2rem] ln:left-[-2rem]">
+                    </p>
+                    <a href="#" class="button">
+                        Get Started Free <i class="ri-arrow-right-line"></i>
+                    </a>
+
+                    <div class="home__box flex justify-center gap-x-12 mt-8 dark:text-dark_title_color lg:flex-start ln:mt-[3rem] ln:gap-x-[4rem] xl:justify-start">
+                        <div>
+                            <h3 class="text-big_font_size font-second_font dark:text-dark_title_color xl:text-biggest_font_size">300+</h3>
+                            <span class="text-small_font_size dark:text-dark_text_color">Yoga Class</span>
+                        </div>
+
+                        <div>
+                            <h3 class="text-big_font_size font-second_font dark:text-dark_title_color xl:text-biggest_font_size">40+</h3>
+                            <span class="text-small_font_size dark:text-dark_text_color">Participants</span>
+                        </div>
+                    </div>
+                </div>
+
+                <img src="img/home-yoga.png" alt="home image" class="home__img w-80 justify-self-center ln:w-[500px] xl:w-[500px] xl:mb-auto">
+            </div>
+        </section>
+
+        <!--?==================== LIST ====================-->
+        <section class="list section " id="list">
+            <div class="list__container container_1 grid_1 gap-y-12 dark:text-dark_text_color me:grid-cols-[350px] me:justify-center lg:grid-cols-2-400px lg:items-center ln:grid-cols-540px-250px ln:gap-x-[4rem] ln:pt-[2rem] 2xl:justify-between">
+                <div class="list__content flex justify-center items-center gap-x-6 sm:flex-col sm:gap-y-[2rem] ln:gap-x-[2rem]">
+                    <h1 class="list__number text-big_font_size font-second_font font-font_medium dark:text-dark_title_color xl:text-biggest_font_size">#01</h1>
+
+                    <div
+                        class="list__blob flex bg-first_color_light w-[230px] h-[100px] rounded-[12.5rem] justify-center items-center dark:bg-dark_container_color transition-[background] duration-[.4s] ln:w-[400px] ln:h-[180px]">
+                        <img src="img/list-yoga.png" alt="list image" class="w-[180px] translate-y-[-1rem] ln:w-[350px] ln:translate-y-[-2rem]">
+                    </div>
+                </div>
+
+                <div class="list__data text-center grid justify-items-center gap-y-[5rem] lg:grid-cols-300px-max lg:gap-x-[2rem] lg:text-left ln:grid-cols-340px-max ln:gap-x-[3rem]">
+                    <p class="list__description relative">
+                        Get a list of specific influencers in
+                        your niche at your fingertips so you can
+                        focus on managing your status.
+
+                        <img src="img/star-2-img.svg" alt="list image" class="absolute w-[50px] top-[-1.8rem] left-0 ln:w-[34px] ln:top-[-2.5rem] ln:left-[-1rem] ">
+                    </p>
+
+                    <a href="#"
+                        class="button list__button relative p-0 bg-gradient_color bg-clip-text text-transparent">
+                        Next <i class="ri-arrow-right-line bg-gradient_color bg-clip-text text-transparent"></i>
+
+                        <img src="img/ellipse-img.svg" alt="button image"
+                            class="absolute max-w-[initial] w-[150px] left-[-2.8rem] ">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!--?==================== HEALTH ====================-->
+        <section class="health section" id="health">
+            <div class="health__container container_1 grid_1 gap-y-8 dark:text-dark_text_color me:grid-cols-[350px] me:justify-center lg:grid-cols-2-400px lg:items-center ln:grid-cols-500px-580px ln:gap-x-[2rem] 2xl:justify-between">
+                <div class="health__data text-center lg:text-left lg:order-1">
+                    <h2 class="section__title lg:text-left dark:text-dark_title_color">
+                        Bring Happiness To
+                        Good Health!
+                    </h2>
+
+                    <p class="health__description mb-8 ">
+                        If you take care of your good health, take
+                        care of your mentality and lead a healthy
+                        life with positive thoughts every day.
+                    </p>
+
+                    <a href="#" class="button">
+                        Let’s Start <i class="ri-arrow-right-line "></i>
+                    </a>
+                </div>
+
+                <div class="health__image relative justify-self-center">
+                    <img src="img/health-fitness.png" alt="health image" class="health__img w-80 ln:w-[500px]">
+
+                    <div
+                        class="health__rate bg-container_color dark:bg-dark_container_color py-[.5rem] px-[.75rem] rounded-[.75rem] w-max flex items-center gap-x-[.5rem] absolute top-[4.5rem] left-[.5rem] transition-[background] duration-[.4s]">
+                        <div class="health__icon bg-[#ffe6e5] rounded-[50%] flex p-[6px] text-[1.5rem] text-[#ff3029] aspect-square h-10 ln:p-[9x] ln:text-[2rem] xl:text-[1.6rem]">
+                            <i class="ri-heart-3-fill"></i>
+                        </div>
+
+                        <div class="health__group">
+                            <span class="health__title flex text-small_font_size font-font_medium text-title_color dark:text-dark_title_color ln:text-normal_font_size">
+                                Heart Rate
+                            </span>
+
+                            <span
+                                class="health__number block text-small_font_size font-font_medium bg-gradient_color bg-clip-text text-transparent ln:text-normal_font_size">
+                                168 bpm
+                            </span>
+                        </div>
+                    </div>
+
+                    <div
+                        class="health__course bg-container_color dark:bg-dark_container_color py-[.5rem] px-[.75rem] rounded-[.75rem] w-max flex items-center gap-x-[.5rem] right-[.5rem] bottom-[2rem] absolute transition-[background] duration-[.4s] ln:right-[2rem] ln:bottom-[3rem] ">
+                        <div class="health__group">
+                            <span
+                                class="health__number block text-small_font_size font-font_medium bg-gradient_color bg-clip-text text-transparent">
+                                500+
+                            </span>
+
+                            <span class="health__title block text-small_font_size font-font_medium text-title_color dark:text-dark_title_color ">
+                                Free Courses
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!--?==================== ROUTINE ====================-->
+        <section class="routine section" id="routine">
+            <div class="routine__container container_1 grid_1 gap-y-8 dark:text-dark_text_color me:grid-cols-[350px] me:justify-center lg:grid-cols-2-400px lg:items-center ln:grid-cols-470px-580px ln:gap-x-[4rem] 2xl:justify-between">
+                <div class="routine__data text-center lg:text-left">
+                    <h2 class="section__title lg:text-left dark:text-dark_title_color">
+                        Anytime, Any Place,
+                        Any Workout
+                    </h2>
+
+                    <p class="routine__description mb-8">
+                        Take your routine at any time of your day,
+                        with the new videos and with the teachers
+                        who will guide you.
+                    </p>
+
+                    <a href="#" class="button">
+                        Get Started Free <i class="ri-arrow-right-line "></i>
+                    </a>
+                </div>
+
+                <div class="routine__images relative w-[300px] h-[280px] justify-self-center sm:w-[250px] ln:w-[580px] ln:h-[575px]">
+                    <img src="img/routine-yoga-1.png" alt="routine image"
+                        class="routine__img-1 w-[250px] rounded-[12.5rem] border-[5px] border-solid border-body_color absolute top-0 left-0 z-[1] dark:border-dark_body_color transition-[border] duration-[.4s] ln:w-[500px] ln:border-[10px] ">
+                    <img src="img/routine-yoga-2.png" alt="routine image"
+                        class="routine__img-2 w-[250px] rounded-[12.5rem] absolute right-0 bottom-0 ln:w-[500px] ">
+
+                    <div
+                        class="routine__box-1 absolute z-10 top-[1.5rem] right-0 bg-container_color dark:bg-dark_container_color py-[.75rem] px-[.5rem] rounded-[0.75rem] w-max flex items-center gap-x-[.5rem] transition-[background] duration-[.4s] ln:top-[6rem] ln:right-[2rem]">
+                        <i
+                            class="ri-play-circle-fill routine__icon bg-gradient_color bg-clip-text text-transparent text-[1.5rem] ln:text-[2rem]"></i>
+                        <span
+                            class="routine__title bg-gradient_color bg-clip-text  text-transparent text-small_font_size font-font_medium ln:text-normal_font_size">High
+                            Quality Video</span>
+                    </div>
+
+                    <div
+                        class="routine__box-2 absolute z-10 left-0 bottom-[1.5rem] bg-container_color dark:bg-dark_container_color py-[.75rem] px-[.5rem] rounded-[0.75rem] w-max flex items-center gap-x-[.5rem] transition-[background] duration-[.4s] ln:left-[3rem] ln:bottom-[3.5rem]">
+                        <i
+                            class="ri-run-fill routine__icon bg-gradient_color bg-clip-text text-transparent text-[1.5rem] ln:text-[2rem]"></i>
+                        <span
+                            class="routine__title bg-gradient_color bg-clip-text  text-transparent text-small_font_size font-font_medium ln:text-normal_font_size">Professional
+                            Trainer</span>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!--?==================== FOLLOW ====================-->
+        <section class="follow section" id="follow">
+            <div class="follow__container container_1 grid_1 me:grid-cols-[350px] me:justify-center">
+                <div class="follow__content-1 grid justify-self-center grid-cols-2 gap-x-4 items-center transition-[border] duration-[.4s] lg:grid-cols-max-200-max ln:grid-cols-max-400-max ln:gap-x-[2.5rem]">
+                    <div class="follow__data text-center col-span-2 lg:col-[initial] lg:order-2 lg:mt-[3rem] ln:mt-[5rem]">
+                        <h2 class="section__title lg:text-center follow__title dark:text-dark_title_color">
+                            Follow Us On
+                            Instagram
+                            <div class="bg-gradient_color bg-clip-text text-transparent">#YOGA</div>
+                        </h2>
+
+                        <a href="#"
+                            class="button follow__button flex-col gap-y-[.5rem] rounded-[50%] w-[88px] h-[88px] mb-8 ">
+                            Follow <i class="ri-arrow-right-line "></i>
+                        </a>
+                    </div>
+
+                    <img src="img/follow-yoga-1.png" alt="follow image"
+                        class="follow__img-1 rounded-[12.5rem] border-[5px] border-solid border-first_color_light w-[140px] dark:border-dark_container_color ln:border-[10px] ln:border-solid ln:border-first_color_light ln:w-[280px]">
+                    <img src="img/follow-yoga-2.png" alt="follow image"
+                        class="follow__img-2 rounded-[12.5rem] border-[5px] border-solid border-first_color_light w-[140px] mt-[2.5rem] dark:border-dark_container_color lg:order-3 lg:mx-0 lg:my-0 ln:border-[10px] ln:border-solid ln:border-first_color_light ln:w-[280px]">
+                </div>
+
+                <div class="follow__content-2 grid justify-self-center gap-y-8 transition-[border] duration-[.4s] lg:grid-cols-max2 lg:gap-x-[1rem]">
+                    <img src="img/follow-yoga-3.png" alt="follow image"
+                        class="follow__img-3 rounded-[12.5rem] border-[5px] border-solid border-first_color_light w-[230px] translate-x-[-2.5rem] rotate-[15deg] dark:border-dark_container_color sm:translate-x-0 sm:rotate-[15deg] lg:translate-x-0 lg:rotate-[15deg] ln:border-[10px] ln:border-solid ln:border-first_color_light ln:w-[500px]">
+                    <img src="img/follow-yoga-4.png" alt="follow image"
+                        class="follow__img-4 rounded-[12.5rem] border-[5px] border-solid border-first_color_light w-[230px] translate-x-[2.5rem] rotate-[-15deg] dark:border-dark_container_color sm:translate-x-0 sm:rotate-[-15deg] lg:rotate-[-15deg] ln:border-[10px] ln:border-solid ln:border-first_color_light ln:w-[500px]">
+                </div>
+            </div>
+        </section>
+
+        <!--?==================== JOIN ====================-->
+        <section class="join section">
+            <div class="join__container container_1 grid_1 pb-8 me:grid-cols-[350px] me:justify-center mn:grid-cols-[600px] ln:grid-cols-[992px] ln:py-[2rem] ln:px-[5rem]">
+                <div
+                    class="join__content gird gap-y-[1.5rem] bg-gradient_color pt-12 px-4 pb-[2.5rem] rounded-[2rem] text-center mn:ps-[3rem] mn:pe-[3rem] ln:py-[4rem] ln:px-[12rem] ln:gap-y-[2.5rem]">
+                    <div>
+                        <h2 class="join__title text-white_color text-big_font_size font-second_font mb-[.75rem] ln:mb-[1rem]">
+                            Join our newsletter
+                        </h2>
+
+                        <p class="join__description text-white_color  ln:mb-[1rem]">
+                            Subscribe to our newsletter to be aware of
+                            many things on discounts, gifts, training
+                            and much more. Just enter your email.
+                        </p>
+                    </div>
+
+                    <form action="" class="join__form mn:flex mn:gap-x-[1rem] mn:bg-white_color mn:py-[.5rem] mn:pr-[.5rem] mn:pl-[1.5rem] mn:rounded-[4rem]">
+                        <input type="email" placeholder="For latest update send mail"
+                            class="join__input w-full outline-none border-none p-[1.5rem] rounded-[3rem] mb-[.75rem] text-title_color text-small_font_size mt-[.75rem] dark:text-[#220953] mn:p-0 mn:m-0">
+
+                        <button
+                            class="button join__button w-full outline-none border-none justify-center shadow-3xl py-5 cursor-pointer mn:pt-[1rem] mn:pb-[1rem] mn:w-[initial]">
+                            Subscribe <i class="ri-arrow-right-line "></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--! ==================== FOOTER ====================-->
+    <footer class="footer bg-first_color_dark text-text_color_light dark:text-dark_text_color pt-[3rem] pb-[2rem] dark:bg-dark_body_color ln:pt-[5rem] ln:pb-[3rem]">
+        <div class="footer__container container_1 grid_1 gap-y-10 ln:gap-y-[3rem]">
+            <div class="footer__content grid_1 gap-y-10 border-b-[1px] border-solid border-text_color dark:text-dark_text_color pb-10 mn:grid-cols-max2 mn:justify-between ln:pb-[3rem] ">
+                <div>
+                    <a href="#" class="footer__logo text-h2_font_size font-second_font mb-[1.25rem] bg-gradient_color bg-clip-text text-transparent  inline-block font-font_medium ln:mb-[2.5rem]">Yoga</a>
+
+                    <p class="footer__description">
+                        Take care of your health and <br>
+                        your mind with the best <br>
+                        Yoga classes.
+                    </p>
+                </div>
+
+                <div class="footer__data grid_1 gap-y-10 mn:grid-cols-max3 ln:gap-x-[4.5rem]">
+                    <div>
+                        <h3 class="footer__title text-h2_font_size font-second_font mb-[1.25rem] text-white_color ln:mb-[2.5rem]">Address</h3>
+
+                        <p class="footer_info">
+                            12345 M/01 Sol <br>
+                            Avenue, Lima, Peru
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3 class="footer__title text-h2_font_size font-second_font mb-[1.25rem] text-white_color">Contact</h3>
+
+                        <p class="footer_info">
+                            +123 456 7890 <br>
+                            yoga@email.com
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3 class="footer__title text-h2_font_size font-second_font mb-[1.25rem] text-white_color">Office</h3>
+
+                        <p class="footer_info">
+                            Monday - Saturday <br>
+                            9AM - 10PM
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__group flex flex-col gap-y-10 items-center ln:flex-row ln:justify-between">
+                <ul class="footer__social flex gap-x-[1.25rem] ln:gap-x-[2rem]">
+                    <li>
+                        <a href="https://www.facebook.com/" target="_blank" class="footer__social-link bg-gradient_color bg-clip-text text-transparent flex text-[1.5rem] transition-transform duration-[.4s] hover:translate-y-[-.25rem] ">
+                            <i class="ri-facebook-circle-line"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.instagram.com/" target="_blank" class="footer__social-link bg-gradient_color bg-clip-text text-transparent flex text-[1.5rem] transition-transform duration-[.4s] hover:translate-y-[-.25rem] ">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://twitter.com/" target="_blank" class="footer__social-link bg-gradient_color bg-clip-text text-transparent flex text-[1.5rem] transition-transform duration-[.4s] hover:translate-y-[-.25rem] ">
+                            <i class="ri-twitter-line"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.youtube.com/" target="_blank" class="footer__social-link bg-gradient_color bg-clip-text text-transparent flex text-[1.5rem] transition-transform duration-[.4s] hover:translate-y-[-.25rem] ">
+                            <i class="ri-youtube-line"></i>
+                        </a>
+                    </li>
+
+                </ul>
+
+                <span class="footer__copy text-smaller_font_size">
+                    &#169; Copyright Bedimcode. All rights reserved
+                </span>
+            </div>
+        </div>
+    </footer>
+
+    <!--! ========== SCROLL UP ==========-->
+    <a href="#" class="scrollup fixed right-4 bottom-[-50%] bg-gradient_color p-[6px] text-[1.25rem] text-white_color rounded-[50%] z-z_tooltip hover:-translate-y-1 ease-in duration-200 aspect-square flex justify-center h-10 ln:right-[3rem]" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+    </a>
+
+    <!--! =============== SCROLLREVEAL ===============-->
+    <script src="/scrollreveal.min.js"></script>
+
+    <!--! =============== MAIN JS ===============-->
+    <script src="main.js"></script>
+</body>
+
+</html>
