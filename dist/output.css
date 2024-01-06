@@ -2,7 +2,7 @@
 
 /*=============== GOOGLE FONTS ===============*/
 
-/*! tailwindcss v3.4.0 | MIT License | https://tailwindcss.com*/
+/*! tailwindcss v3.4.1 | MIT License | https://tailwindcss.com*/
 
 /*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
@@ -470,7 +470,7 @@ body{
   color: rgb(75 62 101 / var(--tw-text-opacity));
 }
 
-:is(:where(.dark) body){
+:is(.dark body){
   --tw-bg-opacity: 1;
   background-color: rgb(20 9 42 / var(--tw-bg-opacity));
 }
@@ -724,6 +724,10 @@ main{
   /* @apply ln:h-header-height; */
 }
 
+.visible{
+  visibility: visible;
+}
+
 .fixed{
   position: fixed;
 }
@@ -881,6 +885,10 @@ main{
   display: inline-block;
 }
 
+.inline{
+  display: inline;
+}
+
 .flex{
   display: flex;
 }
@@ -996,8 +1004,16 @@ main{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.transform{
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .cursor-pointer{
   cursor: pointer;
+}
+
+.resize{
+  resize: both;
 }
 
 .grid-cols-2{
@@ -1334,6 +1350,18 @@ main{
   outline-offset: 2px;
 }
 
+.filter{
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.transition{
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .transition-\[background\]{
   transition-property: background;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1554,6 +1582,60 @@ main{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+:is(.dark .dark\:border-dark_body_color){
+  --tw-border-opacity: 1;
+  border-color: rgb(20 9 42 / var(--tw-border-opacity));
+}
+
+:is(.dark .dark\:border-dark_container_color){
+  --tw-border-opacity: 1;
+  border-color: rgb(55 42 81 / var(--tw-border-opacity));
+}
+
+:is(.dark .dark\:bg-\[\#14092a\]){
+  --tw-bg-opacity: 1;
+  background-color: rgb(20 9 42 / var(--tw-bg-opacity));
+}
+
+:is(.dark .dark\:bg-dark_body_color){
+  --tw-bg-opacity: 1;
+  background-color: rgb(20 9 42 / var(--tw-bg-opacity));
+}
+
+:is(.dark .dark\:bg-dark_container_color){
+  --tw-bg-opacity: 1;
+  background-color: rgb(55 42 81 / var(--tw-bg-opacity));
+}
+
+:is(.dark .dark\:text-\[\#220953\]){
+  --tw-text-opacity: 1;
+  color: rgb(34 9 83 / var(--tw-text-opacity));
+}
+
+:is(.dark .dark\:text-dark_text_color){
+  --tw-text-opacity: 1;
+  color: rgb(160 148 184 / var(--tw-text-opacity));
+}
+
+:is(.dark .dark\:text-dark_title_color){
+  --tw-text-opacity: 1;
+  color: rgb(209 192 241 / var(--tw-text-opacity));
+}
+
+:is(.dark .dark\:text-white_color){
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+:is(.dark .dark\:text-white){
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+:is(.dark .dark\:hover\:bg-gradient_color:hover){
+  background-image: linear-gradient(75deg, #ff52ae 12%, #8b52ff 90%);
+}
+
 @media (max-width: 345px){
   .sm\:w-\[250px\]{
     width: 250px;
@@ -1742,6 +1824,10 @@ main{
 
   .mn\:pt-\[1rem\]{
     padding-top: 1rem;
+  }
+
+  :is(.dark .mn\:dark\:bg-transparent){
+    background-color: transparent;
   }
 }
 
@@ -2173,51 +2259,5 @@ main{
 @media (min-width: 2000px){
   .\32xl\:justify-between{
     justify-content: space-between;
-  }
-}
-
-:is(:where(.dark) .dark\:border-dark_body_color){
-  --tw-border-opacity: 1;
-  border-color: rgb(20 9 42 / var(--tw-border-opacity));
-}
-
-:is(:where(.dark) .dark\:border-dark_container_color){
-  --tw-border-opacity: 1;
-  border-color: rgb(55 42 81 / var(--tw-border-opacity));
-}
-
-:is(:where(.dark) .dark\:bg-\[\#14092a\]){
-  --tw-bg-opacity: 1;
-  background-color: rgb(20 9 42 / var(--tw-bg-opacity));
-}
-
-:is(:where(.dark) .dark\:bg-dark_body_color){
-  --tw-bg-opacity: 1;
-  background-color: rgb(20 9 42 / var(--tw-bg-opacity));
-}
-
-:is(:where(.dark) .dark\:bg-dark_container_color){
-  --tw-bg-opacity: 1;
-  background-color: rgb(55 42 81 / var(--tw-bg-opacity));
-}
-
-:is(:where(.dark) .dark\:text-\[\#220953\]){
-  --tw-text-opacity: 1;
-  color: rgb(34 9 83 / var(--tw-text-opacity));
-}
-
-:is(:where(.dark) .dark\:text-dark_text_color){
-  --tw-text-opacity: 1;
-  color: rgb(160 148 184 / var(--tw-text-opacity));
-}
-
-:is(:where(.dark) .dark\:text-dark_title_color){
-  --tw-text-opacity: 1;
-  color: rgb(209 192 241 / var(--tw-text-opacity));
-}
-
-@media (min-width: 767px){
-  :is(:where(.dark) .mn\:dark\:bg-transparent){
-    background-color: transparent;
   }
 }
